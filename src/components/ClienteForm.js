@@ -89,9 +89,8 @@ const ClienteForm = () => {
                 coordenada_y: ''
             });
         } catch (error) {
-            let errorMessage = 'Erro ao cadastrar cliente. Tente novamente.'; // Mensagem padrão
+            let errorMessage = 'Erro ao cadastrar cliente. Tente novamente.';
             if (error.response && error.response.data && error.response.data.message) {
-                // Usa a mensagem de erro do back-end se disponível
                 errorMessage = error.response.data.message;
             }
             setSnackbarMessage(errorMessage);

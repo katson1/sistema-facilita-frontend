@@ -13,7 +13,7 @@ const style = {
     boxShadow: 24,
     p: 4,
     display: 'flex',
-    flexDirection: 'column', // Garante que o conteúdo flua verticalmente
+    flexDirection: 'column',
 };
 
 const RotaModal = ({ open, handleClose }) => {
@@ -49,8 +49,8 @@ const RotaModal = ({ open, handleClose }) => {
             </Typography>
                 <List sx={{
                     mt: 2,
-                    maxHeight: '380px', // Define uma altura máxima para a lista
-                    overflow: 'auto', // Adiciona uma barra de rolagem se o conteúdo exceder a altura máxima
+                    maxHeight: '380px',
+                    overflow: 'auto',
                 }}>
                     {rota.map((cliente, index) => (
                         <ListItem key={cliente.id} divider>

@@ -8,7 +8,7 @@ const ClienteList = () => {
 
     useEffect(() => {
         const fetchClientes = async () => {
-            const { data } = await axios.get('http://localhost:3001/'); // Substitua pela URL correta do seu backend
+            const { data } = await axios.get('http://localhost:3001/');
             setClientes(data);
         };
         fetchClientes();
